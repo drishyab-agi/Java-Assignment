@@ -25,7 +25,8 @@ public class VowelorConsonant {
          case 'e' :
          case 'i' :
          case 'o' :
-         case 'u' : bool = true;
+         case 'u' : 
+             bool = true;
       }
       if(bool == true){
          System.out.println("Given character is an vowel ");
