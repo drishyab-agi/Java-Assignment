@@ -1,25 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package myString;
 
-/**
- *
- * @author Drishya
- */
 public class ReverseString {
-   public String reverseString(String str){
-   
-      if(str.isEmpty()){
-         return str;
-      } else {
-         return reverseString(str.substring(1))+str.charAt(0);
-      }
-   }
-   public static void main(String[] args) {
-      ReverseString obj = new ReverseString();
-      String result = obj.reverseString("ArisGlobal");
-      System.out.println(result);
-   }
+	public static void main (String[] args) {
+	       
+        String str= "Drishya", nstr="";
+        char ch;
+       
+        System.out.print("Original word: ");
+        System.out.println("Drishya"); 
+       
+        for (int i=0; i<str.length(); i++){
+        	ch= str.charAt(i); 
+        	nstr= ch+nstr; 
+        }
+        System.out.println("Reversed word: "+ nstr);
+    }
+
 }
